@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floricultura Bela Flor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Floricultura Bela Flor</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Bem-vindo à Floricultura Bela Flor</h2>
+            <p>Descubra a beleza das flores frescas e arranjos únicos para todas as ocasiões. Oferecemos entrega rápida e qualidade garantida.</p>
+            <img src="https://via.placeholder.com/800x400?text=Flores+Frescas" alt="Flores frescas" style="width:100%; max-width:800px;">
+        </section>
+        <section id="produtos">
+            <h2>Nossos Produtos</h2>
+            <div class="produto">
+                <img src="https://via.placeholder.com/200x200?text=Rosas+Vermelhas" alt="Rosas Vermelhas">
+                <h3>Rosas Vermelhas</h3>
+                <p>Perfeitas para declarações de amor. R$ 50,00</p>
+                <button onclick="adicionarCarrinho('Rosas Vermelhas')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="https://via.placeholder.com/200x200?text=Lírios+Brancos" alt="Lírios Brancos">
+                <h3>Lírios Brancos</h3>
+                <p>Elegantes e puros. R$ 40,00</p>
+                <button onclick="adicionarCarrinho('Lírios Brancos')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="https://via.placeholder.com/200x200?text=Arranjo+de+Aniversário" alt="Arranjo de Aniversário">
+                <h3>Arranjo de Aniversário</h3>
+                <p>Misture de flores coloridas. R$ 80,00</p>
+                <button onclick="adicionarCarrinho('Arranjo de Aniversário')">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma floricultura dedicada a fornecer flores frescas e serviços de qualidade há mais de 10 anos. Nossa missão é trazer alegria através da natureza.</p>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="contactForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p>Telefone: (11) 1234-5678</p>
+            <p>Email: contato@belaflor.com</p>
+            <p>Endereço: Rua das Flores, 123, São Paulo</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Floricultura Bela Flor. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
